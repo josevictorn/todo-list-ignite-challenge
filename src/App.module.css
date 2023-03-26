@@ -1,0 +1,87 @@
+.wrapper {
+  max-width: 46rem;
+  margin: -1.6875rem auto 0;
+}
+
+.form {
+  width: 100%;
+
+  display: flex;
+  gap: 8px
+}
+
+.form input {
+  width: 100%;
+  background: var(--gray-500);
+  color: var(--gray-100);
+
+  padding: 1rem;
+
+  border: 0;
+  border-radius: 8px;
+}
+
+.form button[type="submit"] {
+  background: var(--blue-dark);
+  color: var(--gray-100);
+
+  font-weight: 700;
+  font-size: 0.875rem;
+
+  border: 0;
+  border-radius: 8px;
+
+  padding: 1rem;
+
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+.form button[type="submit"]:hover {
+  background: var(--blue);
+}
+
+.tasks {
+  margin-top: 4rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info > div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  font-size: 0.875rem;
+}
+
+.info .created strong {
+  color: var(--blue);
+}
+
+.info .done strong {
+  color: var(--purple);
+}
+
+.info > div span {
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+
+  border-radius: 999px;
+
+  color: var(--gray-100);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.list {
+  margin-top: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

@@ -1,0 +1,82 @@
+.task {
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  padding: 1rem;
+
+  border-radius: 8px;
+}
+
+.taskDescription {
+  width: 41.75rem;
+
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  gap: 0.5rem;
+}
+
+.taskDescription > input {
+  appearance: none;
+
+  width: 1rem;
+  height: 1rem;
+  
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+}
+
+.taskDescription > input:hover {
+  border-color: var(--blue-dark);
+  background: hsla(202, 69%, 37%, 0.2);
+}
+
+.taskDescription > input:checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--purple-dark);
+  border: 0;
+}
+
+.taskDescription > input:checked:after {
+  content: url('../assets/check.svg');
+}
+
+.taskDescription > input:checked:hover {
+  background: var(--purple);
+}
+
+.taskDescription > label {
+  font-size: 0.875rem;
+}
+
+.taskDescription > input:checked + label {
+  text-decoration: line-through;
+}
+
+.task > button {
+  background: transparent;
+  border: none;
+
+  width: 1.6rem;
+  height: 1.6rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+
+  color: var(--gray-300);
+
+  cursor: pointer;
+}
+
+.task > button:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+}
